@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web1:
+    build: ./web1
+    ports:
+    - "80:80"
+    volumes:
+    - ./:/var/www/html
+    environment:
+      XDEBUG_CONFIG: remote_host=mr-Aspire-V5-572G
