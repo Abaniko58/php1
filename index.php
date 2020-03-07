@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>minimarket</title>
+    <meta name="description" content="Описание сайта длиной до 200 символов" />
+    <meta name="keywords" content="ключевые слова для поисковика">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <!--    <link href="http://ideasburner.com/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+
+</head>
+
 <?php
 class square
 {
@@ -124,23 +137,3 @@ $pages = ['main', 'cart', 'ledenec', 'about'];
 } else {include 'pages/error.php';}
 
     require 'views/footer.php';
-/*Этот безумный дубль коммента сделан чтобы изменить файл для Git
-    public static function __callStatic($name, $arguments)
-    {
-        // Замечание: значение $name регистрозависимо.
-        echo "Вызов статического метода '$name' "
-            . implode(', ', $arguments) . "\n";
-    }
-    public function aaaa()
-    {
-        echo '<br>';
-        echo "aadaaaaaaa <br>";
-    }
-}
-
-$obj = new MethodTest;
-$obj->runTest('в контексте объекта');
-$obj->aaa();
-
-MethodTest::runTest('в статическом контексте');
-*/
