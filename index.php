@@ -33,6 +33,7 @@ class square
     {
         $this->color=$color;
     }
+
     public function __call($name, $arguments)
     {
         // Замечание: значение $name регистрозависимо.
@@ -123,3 +124,23 @@ $pages = ['main', 'cart', 'ledenec', 'about'];
 } else {include 'pages/error.php';}
 
     require 'views/footer.php';
+/*Этот безумный дубль коммента сделан чтобы изменить файл для Git
+    public static function __callStatic($name, $arguments)
+    {
+        // Замечание: значение $name регистрозависимо.
+        echo "Вызов статического метода '$name' "
+            . implode(', ', $arguments) . "\n";
+    }
+    public function aaaa()
+    {
+        echo '<br>';
+        echo "aadaaaaaaa <br>";
+    }
+}
+
+$obj = new MethodTest;
+$obj->runTest('в контексте объекта');
+$obj->aaa();
+
+MethodTest::runTest('в статическом контексте');
+*/

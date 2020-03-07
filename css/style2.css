@@ -1,0 +1,28 @@
+body {
+    background-color: aliceblue;
+}
+#hell {
+    background-color: burlywood;
+    height: 400px;
+    width: 800px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid brown;
+}
+
+h1 { color: chocolate}
+h2 {color: brown}
+.first {color: darkorange}
+#one {
+    color: blue;
+    text-decoration: underline;
+}
+p:hover {color: red}
+p:visited {color: aqua}
+#second {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: "Courier 10 Pitch" sans-serif;
+    text-align: center;
+}
