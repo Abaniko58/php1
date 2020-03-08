@@ -16,7 +16,7 @@ class square
 {
     public $size = 42;
     private $color = "red";
-    public static $location = "Внутри дома";
+    public static $location = "Внутри своего дома";
 
        /**   public function __construct()
     {
