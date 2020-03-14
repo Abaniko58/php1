@@ -3,7 +3,7 @@ services:
   web1:
     build: ./web1
     ports:
-    - "80:80"
+    - "88:80"
     volumes:
     - ./:/var/www/html
     environment:
