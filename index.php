@@ -94,37 +94,6 @@ class table
 
 }
 
-/*
-class MethodTest
-{
-    public function __call($name, $arguments)
-    {
-        // Замечание: значение $name регистрозависимо.
-        echo "Mетода '$name' не существует"
-            . implode(', ', $arguments) . "\n";
-    }
-
-    /**  Начиная с PHP 5.3.0  */
-/*
-    public static function __callStatic($name, $arguments)
-    {
-        // Замечание: значение $name регистрозависимо.
-        echo "Вызов статического метода '$name' "
-            . implode(', ', $arguments) . "\n";
-    }
-    public function aaaa()
-    {
-        echo '<br>';
-        echo "aadaaaaaaa <br>";
-    }
-}
-
-$obj = new MethodTest;
-$obj->runTest('в контексте объекта');
-$obj->aaa();
-
-MethodTest::runTest('в статическом контексте');
-*/
 require 'views/header.php';
 $pages = ['main', 'cart', 'ledenec', 'about'];
    if (isset($_GET['page'])) {
