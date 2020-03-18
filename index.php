@@ -105,4 +105,6 @@ $pages = ['main', 'cart', 'ledenec', 'about'];
     include 'pages/error.php';}
 } else {include 'pages/error.php';}
 
-    require 'views/footer.php';
+require 'views/footer.php';
+
+

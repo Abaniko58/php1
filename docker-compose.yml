@@ -1,4 +1,4 @@
-version: '2'
+version: '3.4'
 services:
   web1:
     build: ./web1
@@ -8,3 +8,23 @@ services:
     - ./:/var/www/html
     environment:
       XDEBUG_CONFIG: remote_host=mr-Aspire-V5-572G
+    depends_on:
+            - db
+    container_name: my_web
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+    volumes:
+    - ./datadir:/var/lib/mysql
+    container_name: my_db
+
+  adminer:
+      image: adminer
+      restart: always
+      ports:
+        - 8080:8080
+
+
