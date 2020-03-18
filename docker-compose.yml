@@ -4,6 +4,7 @@ services:
     build: ./web1
     ports:
     - "88:80"
+    restart: always
     volumes:
     - ./:/var/www/html
     environment:
